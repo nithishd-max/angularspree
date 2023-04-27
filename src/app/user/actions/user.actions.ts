@@ -34,14 +34,12 @@ export class UserActions {
       type: UserActions.FETCH_USER_ADDRESS
     };
   }
-
   fetchUserAddressSuccess(addressList: Address[]) {
     return {
       type: UserActions.FETCH_USER_ADDRESS_SUCCEESS,
       payload: addressList
     };
   }
-
   fetchCountries() {
     return {
       type: UserActions.FETCH_COUNTRIES
@@ -54,14 +52,12 @@ export class UserActions {
       payload: countries
     };
   }
-
   fetchStates(countryId: string) {
     return {
       type: UserActions.FETCH_STATES,
       payload: countryId
     };
   }
-
   fetchStatesSuccess(states: CState[]) {
     return {
       type: UserActions.FETCH_STATES_SUCCEESS,
